@@ -1,10 +1,10 @@
 <?php
 // Database connection
 $host = 'localhost';
-$db = 'hotel_database';
+$db = 'bookings';
 $user = 'root';
 $pass = '';
-$conn = new mysqli($host, $user, $pass, $bookings);
+$conn = new mysqli($host, $user, $pass, $db);
 
 // Check connection
 if ($conn->connect_error) {
