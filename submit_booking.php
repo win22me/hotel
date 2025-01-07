@@ -1,4 +1,20 @@
 <?php
+
+<header>
+        <div class="container">
+            <h1>Welcome to Shimla Hotel</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="facilities.html" class="active">Facilities</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
 // Database connection
 $host = 'localhost';
 $db = 'booking';
