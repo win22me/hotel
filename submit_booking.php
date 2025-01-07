@@ -1,7 +1,7 @@
 <?php
 // Database connection
 $host = 'localhost';
-$db = 'bookings';
+$db = 'booking';
 $user = 'root';
 $pass = '';
 $conn = new mysqli($host, $user, $pass, $db);
