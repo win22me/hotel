@@ -1,7 +1,7 @@
 <?php
 // Database connection
 $conn = new mysqli('localhost', 'root', '', 'booking');
-
+<h1> List of customer </h1>
 // Fetch bookings
 $result = $conn->query("SELECT * FROM bookings ORDER BY created_at DESC");
 
