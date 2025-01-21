@@ -1,9 +1,9 @@
 <?php
 // Database connection
-$conn = new mysqli('localhost', 'root', '', 'booking');
+$conn = new mysqli('localhost', 'root', '', 'hotel_booking');
 
 // Fetch bookings
-$result = $conn->query("SELECT * FROM bookings ORDER BY created_at DESC");
+$result = $conn->query("SELECT * FROM booking ORDER BY created_at DESC");
 
 echo "<h1>Booking Customer List</h1>";
 echo "<table border='1'>";
