@@ -27,7 +27,7 @@ $result = $conn->query($sql);
 </head>
 <body>
     <h1>Shimla Hotel - Current Offers & News</h1>
-
+    <h1>Shimla Hotel - Offers & News</h1>
     <?php if ($result->num_rows > 0): ?>
         <ul>
             <?php while ($row = $result->fetch_assoc()): ?>
