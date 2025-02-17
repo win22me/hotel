@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPI Payment - Shimla Hotel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        .upi-image {
+            width: 200px;
+            height: 200px;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>UPI Payment for Shimla Hotel</h2>
+        <p>Scan the QR code below to make your payment.</p>
+        <img src="upi_qr_code.png" alt="UPI QR Code" class="upi-image">
+        <p>Or use the UPI ID below:</p>
+        <h3>shimlahotel@upi</h3>
+        <a href="upi://pay?pa=shimlahotel@upi&pn=Shimla%20Hotel&mc=&tid=&tr=&tn=Hotel%20Booking&am=&cu=INR" class="btn">Pay Now</a>
+    </div>
+</body>
+</html>

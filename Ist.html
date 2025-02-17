@@ -1,0 +1,47 @@
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { MapPin, Calendar, Star } from 'lucide-react';
+
+const destinations = [
+  {
+    name: 'Paris',
+    image: 'https://via.placeholder.com/400',
+    location: 'France',
+    rating: 4.8,
+    description: 'Explore the city of lights and romance.'
+  },
+  {
+    name: 'Tokyo',
+    image: 'https://via.placeholder.com/400',
+    location: 'Japan',
+    rating: 4.7,
+    description: 'Experience the blend of tradition and technology.'
+  },
+  {
+    name: 'New York',
+    image: 'https://via.placeholder.com/400',
+    location: 'USA',
+    rating: 4.6,
+    description: 'The city that never sleeps awaits you.'
+  }
+];
+
+export default function TourismPortal() {
+  return (
+    <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {destinations.map((destination, index) => (
+        <Card key={index} className="rounded-2xl shadow-lg">
+          <img src={destination.image} alt={destination.name} className="w-full h-48 object-cover rounded-t-2xl" />
+          <CardContent>
+            <h2 className="text-xl font-bold mb-2">{destination.name}</h2>
+            <p className="text-gray-600 flex items-center mb-1"><MapPin className="w-4 h-4 mr-1" /> {destination.location}</p>
+            <p className="text-gray-600 flex items-center mb-1"><Star className="w-4 h-4 mr-1 text-yellow-500" /> {destination.rating}</p>
+            <p className="text-gray-700 mb-4">{destination.description}</p>
+            <Button>Explore</Button>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  );
+}
